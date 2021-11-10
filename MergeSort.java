@@ -34,13 +34,13 @@ public class MergeSort {
     return arr;
   }
 
-  public int[] sort(int[] arr, int l, int r) {
+  public int[] sort(int[] arr, int l, int h) {
     int[] result = new int[arr.length];
-    if (l < r) {
-      int mid = (l + r) / 2;
+    if (l < h) {
+      int mid = (l + h) / 2;
       sort(arr, l, mid);
-      sort(arr, mid + 1, r);
-      result = merge(arr, l, mid, r);
+      sort(arr, mid + 1, h);
+      result = merge(arr, l, mid, h);
     }
     return result;
   }
