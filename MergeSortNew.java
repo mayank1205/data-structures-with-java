@@ -3,8 +3,7 @@ public class MergeSortNew {
     public static int[] merge(int[] arr, int l, int mid, int r){
         int i = l, j = mid+1, k = l;
         int[] merged = new int[arr.length];
-        // System.out.println("n "+ n);
-        // System.out.println("m "+ m);
+
             
         while(i <= mid && j <= r) {
 
